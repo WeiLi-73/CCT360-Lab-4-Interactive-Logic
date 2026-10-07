@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dressed for the Moment</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">AN INTERACTIVE STYLE STUDY</p>
+      <h1>Dressed for <em>the Moment</em></h1>
+      <p>Choose an occasion and a mood. Discover how one accessory can change your look.</p>
+    </header>
+
+    <section class="panel">
+      <p class="eyebrow">01 / CHOOSE</p>
+      <h2>Set your scene</h2>
+      <p class="guide">STEP 1: Choose a place and a mood. STEP 2: Press “Find my look.” Your result will appear in the card below.</p>
+
+      <form id="style-form">
+        <label for="occasion">Where are you going?</label>
+        <select id="occasion">
+          <option value="campus">A day on campus</option>
+          <option value="gallery">An art gallery</option>
+          <option value="cafe">A café date</option>
+        </select>
+
+        <label for="mood">How do you want to feel?</label>
+        <select id="mood">
+          <option value="soft">Soft and relaxed</option>
+          <option value="bold">Bold and expressive</option>
+          <option value="playful">Playful and curious</option>
+        </select>
+
+        <button type="submit">Find my look</button>
+      </form>
+    </section>
+
+  <section class="panel" id="result-panel" aria-live="polite">
+      <p class="eyebrow">02 / DISCOVER</p>
+      <h2>Your look</h2>
+      <p id="look-name">Your style story starts with a choice above.</p>
+      <p id="look-description"></p>
+      <div id="pieces"></div>
+      <button id="another" type="button" hidden>Try another look</button>
+    </section>
+
+    <section class="panel">
+      <p class="eyebrow">03 / REMEMBER</p>
+      <h2>Your style trail</h2>
+      <p>Your latest three looks will appear here.</p>
+      <ol id="history"></ol>
+      <button id="clear" type="button">Clear my trail</button>
+    </section>
+  </main>
+</body>
+</html>
