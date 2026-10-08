@@ -213,3 +213,19 @@ select:focus-visible {
   font-size: 13px;
   line-height: 1.7;
 }
+
+#look-reason {
+  max-width: 440px;
+  margin: 20px auto 0;
+  padding: 15px 18px;
+  border-left: 3px solid var(--accent);
+  background: var(--soft-pink);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.8;
+  text-align: left;
+}
+
+[hidden] {
+  display: none !important;
+}
